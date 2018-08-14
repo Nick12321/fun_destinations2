@@ -1,0 +1,10 @@
+INSERT INTO funplace_places (name, country) VALUES ("Disneyland", "USA");
+INSERT INTO funplace_places (name, country) VALUES ("Tivoli Gardens", "Denmark");
+INSERT INTO funplace_places (name, country) VALUES ("Universal Studios", "USA");
+INSERT INTO funplace_places (name, country) VALUES ("Tokyo Disneyland", "Japan");
+INSERT INTO funplace_places (name, country) VALUES ("Efteling Park", "Netherlands");
+INSERT INTO funplace_places (name, country) VALUES ("Beto Carrero World", "Brazil");
+INSERT INTO funplace_places (name, country) VALUES ("Europa Park", "Germany");
+INSERT INTO funplace_places (name, country) VALUES ("Lotte World", "South Korea");
+INSERT INTO funplace_places (name, country) VALUES ("GARDALAND PARK", "Italy");
+INSERT INTO funplace_places (name, country) VALUES ("Ocean Park", "China");

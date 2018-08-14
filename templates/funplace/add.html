@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Add place!</title>
+	</head>
+	<body>
+		<form action="." method="post">
+			{% csrf_token %}
+			<table>
+				<tr>
+					<td>Name</td>
+					<td><input name="placeName" type="text" /></td>
+				</tr>
+				<tr>
+					<td>Country</td>
+					<td><input name="country" type="text" /></td>
+				</tr>
+				{% if isPostResponse %}
+				<tr>
+					<td>
+						{% if isSaved %}
+							Saved!
+						{% else %}
+							Failed to Save :-(
+						{% endif %}
+					</td>
+				</tr>
+				{% endif %}
+				<tr>
+					<td><input type="submit" value"Save!"></form></td>
+				</tr>
+				<tr>
+					<td>
+						<form action="/fun/places2" method="get">
+							<input type="submit" value="Close"/>
+						</form>
+					</td>
+				</tr>
+	</body>
+</html>

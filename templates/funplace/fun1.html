@@ -1,0 +1,13 @@
+<html>
+	<head><title>Fun!</title></head>
+	<body>
+		<table>
+			{% for place in funplaces %}
+				<tr>
+					<td>{{ place.name }}</td>
+					<td>{{ place.country }}</td>
+				</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
