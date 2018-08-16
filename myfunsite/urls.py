@@ -24,5 +24,6 @@ urlpatterns = [
 	path('fun/places/', myFunView.showFunPlaces, name='showFunPlaces'),
 	path('fun/places2/', myFunView.showFunPlaces2, name='showFunPlaces2'),
 	path('fun/place/add/', myFunView.addFunPlace, name='addFunPlace'),
+    path('fun/place/edit/', myFunView.editFunPlace, name='editFunPlace'),
 	path('admin/', admin.site.urls),
 ]

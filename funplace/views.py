@@ -29,3 +29,13 @@ def addFunPlace(request):
 		isSaved = funplaceController.savePlace(placeName, country)
 		context = {"isPostResponse": True, "isSaved": isSaved}
 		return render(request, 'funplace/add.html', context)
+
+def editFunPlace(request):
+	if request.method == 'GET':
+		return render(request, 'funplace/edit.html')
+	elif request.method == 'POST':
+		placeName = request.POST.get("placeName", None)
+		country = request.POST.get("country", None)
+		isSaved = funplaceController.savePlace(placeName, country)
+		context = {"isPostResponse": True, "isSaved": isSaved}
+		return render(request, 'funplace/edit.html', context)
